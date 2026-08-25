@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>NOIR AU NOIR × Fema Laser &amp; Skin Clinic · Videography Proposal</title>
+<style>
+  :root{
+    --bg:#0a0a0a;
+    --panel:#111111;
+    --panel-2:#161616;
+    --line:#262626;
+    --ink:#f4f1ec;
+    --muted:#8f8a83;
+    --orange:#ff6a1a;
+    --orange-soft:#c65114;
+    --serif:'Times New Roman', serif;
+    --sans:-apple-system, 'Helvetica Neue', Arial, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 28px;}
+
+  /* --- masthead --- */
+  header{
+    padding:70px 0 46px;
+    border-bottom:1px solid var(--line);
+    text-align:center;
+  }
+  .brand{
+    font-size:12px;letter-spacing:.34em;font-weight:600;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .client-title{
+    font-family:var(--serif);font-size:52px;letter-spacing:.22em;font-weight:400;
+    text-transform:uppercase;line-height:1.1;
+  }
+  .client-sub{
+    font-family:var(--serif);font-size:22px;letter-spacing:.28em;font-weight:400;
+    text-transform:uppercase;color:var(--muted);margin-top:10px;
+  }
+  .rule{width:34px;height:1px;background:var(--orange);margin:22px auto;}
+  .for-line{
+    font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
+  }
+
+  /* --- intro --- */
+  .intro{
+    padding:52px 0;border-bottom:1px solid var(--line);
+    font-family:var(--serif);font-size:19px;line-height:1.75;color:#d9d4cc;
+    max-width:640px;margin:0 auto;text-align:center;
+  }
+  .intro .lead{display:block;font-size:13px;letter-spacing:.3em;color:var(--orange);
+    font-family:var(--sans);text-transform:uppercase;margin-bottom:24px;}
+
+  /* --- section head --- */
+  .sec-head{padding:56px 0 8px;text-align:center;}
+  .sec-head .num{font-size:11px;letter-spacing:.4em;color:var(--orange);text-transform:uppercase;}
+  .sec-head h2{font-family:var(--serif);font-size:24px;font-weight:400;letter-spacing:.06em;margin-top:12px;}
+
+  /* --- package cards --- */
+  .pkg{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:2px;
+    margin:26px 0;
+    overflow:hidden;
+  }
+  .pkg.featured{border-color:var(--orange-soft);}
+  .pkg-top{
+    display:flex;justify-content:space-between;align-items:flex-start;
+    padding:30px 32px 26px;border-bottom:1px solid var(--line);
+    gap:20px;flex-wrap:wrap;
+  }
+  .pkg-name{font-family:var(--serif);font-size:22px;letter-spacing:.04em;}
+  .pkg-tag{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:6px;}
+  .price{text-align:right;white-space:nowrap;}
+  .price .amt{font-family:var(--serif);font-size:34px;color:var(--orange);line-height:1;}
+  .price .per{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:8px;}
+  .price .was{
+    font-family:var(--serif);font-size:22px;color:var(--muted);line-height:1;
+    display:inline-block;position:relative;margin-bottom:10px;
+  }
+  .price .was::after{
+    content:"";position:absolute;left:-3px;right:-3px;top:52%;
+    height:1px;background:var(--orange);transform:rotate(-6deg);
+  }
+  .price .off{
+    font-size:10px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--orange);margin-top:8px;
+  }
+  .badge{
+    display:inline-block;font-size:10px;letter-spacing:.24em;text-transform:uppercase;
+    color:#0a0a0a;background:var(--orange);padding:4px 10px;border-radius:2px;margin-bottom:12px;
+  }
+
+  .pkg-body{padding:26px 32px 32px;}
+  ul.feat{list-style:none;}
+  ul.feat li{
+    position:relative;padding:12px 0 12px 26px;border-bottom:1px solid #1c1c1c;
+    font-size:14.5px;color:#ddd8d0;
+  }
+  ul.feat li:last-child{border-bottom:none;}
+  ul.feat li::before{
+    content:"";position:absolute;left:0;top:20px;width:8px;height:1px;background:var(--orange);
+  }
+  ul.feat li b{color:var(--ink);font-weight:600;}
+  ul.feat li .sub{display:block;color:var(--muted);font-size:12.5px;margin-top:3px;letter-spacing:.01em;}
+
+  /* --- content mix chips --- */
+  .mix{padding:22px 32px 26px;}
+  .mix .label{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--orange);margin-bottom:14px;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-size:12px;letter-spacing:.02em;padding:7px 13px;border:1px solid var(--line);
+    border-radius:20px;color:#cfc9c1;background:var(--panel-2);
+  }
+  .chip b{color:var(--orange);font-weight:600;}
+
+  /* --- note --- */
+  .note{
+    background:var(--panel-2);border:1px solid var(--line);border-left:2px solid var(--orange);
+    border-radius:2px;padding:22px 26px;margin:24px 0;
+  }
+  .note .t{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--orange);margin-bottom:10px;}
+  .note p{font-size:14px;color:#cbc6be;line-height:1.7;}
+  .note p + p{margin-top:12px;}
+
+  /* --- process --- */
+  .process{padding:8px 0 0;}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px;}
+  .step{background:var(--panel);border:1px solid var(--line);border-radius:2px;padding:22px 20px;}
+  .step .n{font-family:var(--serif);font-size:26px;color:var(--orange);}
+  .step h4{font-size:13px;letter-spacing:.02em;margin:10px 0 6px;font-weight:600;}
+  .step p{font-size:12.5px;color:var(--muted);line-height:1.6;}
+
+  /* --- terms --- */
+  .terms{padding:52px 0;border-top:1px solid var(--line);margin-top:56px;}
+  .terms-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:8px;}
+  .term{padding:16px 0;border-bottom:1px solid #1a1a1a;}
+  .term .k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);}
+  .term .v{font-size:14px;color:#d9d4cc;margin-top:5px;}
+
+  /* --- footer --- */
+  footer{text-align:center;padding:56px 0 70px;}
+  .foot-brand{font-family:var(--serif);font-size:20px;letter-spacing:.26em;text-transform:uppercase;}
+  .foot-line{width:34px;height:1px;background:var(--orange);margin:20px auto;}
+  .foot-meta{font-size:12px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase;}
+
+  @media(max-width:640px){
+    .client-title{font-size:30px;letter-spacing:.14em;}
+    .client-sub{font-size:16px;letter-spacing:.2em;}
+    .steps{grid-template-columns:1fr;}
+    .terms-grid{grid-template-columns:1fr;}
+    .price{text-align:left;}
+    .pkg-top{flex-direction:column;}
+  }
+  @media print{
+    body{background:#fff;color:#111;}
+    .pkg,.step,.note,.chip{background:#fff;border-color:#ccc;}
+    .num,.mix .label,.term .k,.note .t{color:var(--orange-soft);}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===================== MASTHEAD ===================== -->
+  <header>
+    <div class="brand">NOIR AU NOIR</div>
+    <div class="rule"></div>
+    <div class="client-title">Fema</div>
+    <div class="client-sub">Laser &amp; Skin Clinic</div>
+    <div class="for-line" style="margin-top:20px;">Videography Proposal · Monthly</div>
+  </header>
+
+  <!-- ===================== INTRO ===================== -->
+  <p class="intro">
+    <span class="lead">Three ways to work together</span>
+    A clinic sells trust before it sells a treatment. What follows are three levels of the same
+    approach, from a steady monthly presence to a full rebuild of how the clinic looks and speaks
+    online. Every level is planned in advance, so nothing is invented on the shoot day.
+  </p>
+
+  <!-- ===================== PACKAGE 01 ===================== -->
+  <div class="sec-head">
+    <div class="num">01 · Entry level</div>
+    <h2>Essential</h2>
+  </div>
+
+  <div class="pkg">
+    <div class="pkg-top">
+      <div>
+        <div class="pkg-name">Essential</div>
+        <div class="pkg-tag">A steady monthly presence</div>
+      </div>
+      <div class="price">
+        <div class="amt">&euro;950</div>
+        <div class="per">per month · VAT incl.</div>
+      </div>
+    </div>
+    <div class="pkg-body">
+      <ul class="feat">
+        <li><b>4 planned reels</b>
+          <span class="sub">Chosen and written before the shoot day, filmed in one session at the clinic.</span></li>
+        <li><b>1 interview reel</b>
+          <span class="sub">One of your specialists on camera, answering a question your clients actually ask.</span></li>
+        <li><b>10 ready to post photographs</b>
+          <span class="sub">Edited, correctly framed for feed and stories, delivered with the reels.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===================== PACKAGE 02 ===================== -->
+  <div class="sec-head">
+    <div class="num">02 · The working month</div>
+    <h2>Signature</h2>
+  </div>
+
+  <div class="pkg">
+    <div class="pkg-top">
+      <div>
+        <div class="pkg-name">Signature</div>
+        <div class="pkg-tag">A full month of content, planned as one</div>
+      </div>
+      <div class="price">
+        <div class="amt">&euro;1.500</div>
+        <div class="per">per month · VAT incl.</div>
+      </div>
+    </div>
+    <div class="pkg-body">
+      <ul class="feat">
+        <li><b>10 reels, planned every month</b>
+          <span class="sub">A mix of formats agreed in advance, so the feed keeps a rhythm instead of repeating itself.</span></li>
+        <li><b>Recurring formats that build recognition</b>
+          <span class="sub">Treatment of the week, interview setups, ASMR of the treatment room, and more.</span></li>
+        <li><b>10 to 20 ready to post photographs</b>
+          <span class="sub">Enough to carry the feed, the stories and the website between shoots.</span></li>
+        <li><b>Posting guide</b>
+          <span class="sub">What goes out, on which day, in which order, with the caption direction per piece.</span></li>
+      </ul>
+    </div>
+    <div class="mix">
+      <div class="label">Format mix, agreed each month</div>
+      <div class="chips">
+        <span class="chip">Treatment of the week</span>
+        <span class="chip">Interview setup</span>
+        <span class="chip">ASMR</span>
+        <span class="chip">Before and after</span>
+        <span class="chip">Clinic atmosphere</span>
+        <span class="chip">Question and answer</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PACKAGE 03 ===================== -->
+  <div class="sec-head">
+    <div class="num">03 · The full build</div>
+    <h2>Rebrand</h2>
+  </div>
+
+  <div class="pkg featured">
+    <div class="pkg-top">
+      <div>
+        <span class="badge">Most complete</span>
+        <div class="pkg-name">Rebrand</div>
+        <div class="pkg-tag">A new identity, then the production to carry it</div>
+      </div>
+      <div class="price">
+        <div class="was">&euro;3.250</div>
+        <div class="amt">&euro;2.700</div>
+        <div class="per">per month · VAT incl.</div>
+        <div class="off">Reduced for Fema</div>
+      </div>
+    </div>
+    <div class="pkg-body">
+      <ul class="feat">
+        <li><b>We redesign the whole social media page</b>
+          <span class="sub">Grid, covers, highlights, tone of voice and the visual rules that hold it together. This happens in the first month, before anything is filmed.</span></li>
+        <li><b>One full day of brainstorming</b>
+          <span class="sub">Your team and ours in one room, deciding what the clinic stands for and how that gets said on camera.</span></li>
+        <li><b>Everything in Signature, at a higher production level</b>
+          <span class="sub">The full month of reels and photographs, filmed with a larger setup.</span></li>
+        <li><b>More interview and explanation reels</b>
+          <span class="sub">Longer takes, real answers, the kind of piece that makes a hesitant client book.</span></li>
+        <li><b>Full production included</b>
+          <span class="sub">Direction, lighting, sound, edit and grade. No separate crew or gear line on the invoice.</span></li>
+        <li><b>Visibility control, every month</b>
+          <span class="sub">A short written read of what performed, what did not, and what we change in the next plan.</span></li>
+      </ul>
+    </div>
+    <div class="mix">
+      <div class="label">Included in the first month</div>
+      <div class="chips">
+        <span class="chip"><b>1</b> · Brand day</span>
+        <span class="chip"><b>1</b> · Page redesign</span>
+        <span class="chip"><b>1</b> · Visual guideline</span>
+        <span class="chip">Monthly performance read</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== NOTES ===================== -->
+  <div class="note">
+    <div class="t">What a reel means here</div>
+    <p>
+      Ten reels means ten finished pieces, not ten single unbroken takes. A long continuous take is
+      used when it earns its place, to honour a treatment done well or to let a specialist finish a
+      thought without a cut.
+    </p>
+  </div>
+
+  <div class="note">
+    <div class="t">Clients on camera</div>
+    <p>
+      Nobody is filmed without written permission, and no treatment is shown in a way that identifies
+      a client unless they have agreed to it in writing. We bring the release forms and handle them on
+      the day, so your team does not have to.
+    </p>
+  </div>
+
+  <!-- ===================== PROCESS ===================== -->
+  <div class="sec-head">
+    <div class="num">04 · How it works</div>
+    <h2>The Shape of a Month</h2>
+  </div>
+  <div class="process">
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <h4>Plan</h4>
+        <p>We agree the pieces for the month and the day to film them, chosen around your consultation hours so the clinic keeps running.</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h4>Film</h4>
+        <p>One session on site. Everything for the month is captured in that day, reels and photographs together, worked calmly against the plan.</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h4>Deliver</h4>
+        <p>You receive the finished pieces with the posting guide telling you what goes out and when across the coming weeks.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <div class="t">Your client portal</div>
+    <p>
+      Every collaboration comes with a personal portal, included in all three packages. Each step we
+      take, plan or consider is visible there, so you always know where the month stands without
+      having to ask.
+    </p>
+    <p>
+      The plan for the month, the shoot day, the pieces in edit, the finished deliverables and the
+      posting calendar all live in one place, updated as we work.
+    </p>
+  </div>
+
+  <!-- ===================== TERMS ===================== -->
+  <div class="terms">
+    <div class="sec-head" style="padding-top:0;">
+      <div class="num">05 · Terms</div>
+      <h2>The Agreement</h2>
+    </div>
+    <div class="terms-grid">
+      <div class="term"><div class="k">Prices</div><div class="v">Per month, VAT included, no hidden production costs</div></div>
+      <div class="term"><div class="k">Deposit</div><div class="v">33 percent on the first month, once only, to reserve the shoot</div></div>
+      <div class="term"><div class="k">Balance</div><div class="v">On delivery. Every month after is settled in one payment</div></div>
+      <div class="term"><div class="k">Invoices</div><div class="v">Payable within 30 days</div></div>
+      <div class="term"><div class="k">Shoot day</div><div class="v">One session per month, fixed together in advance</div></div>
+      <div class="term"><div class="k">Client portal</div><div class="v">Included in every package, from the first day</div></div>
+      <div class="term"><div class="k">Notice</div><div class="v">30 days before the next month</div></div>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="foot-brand">NOIR AU NOIR</div>
+    <div class="foot-line"></div>
+    <div class="foot-meta">Prepared for Fema Laser &amp; Skin Clinic</div>
+  </footer>
+
+</div>
+</body>
+</html>
